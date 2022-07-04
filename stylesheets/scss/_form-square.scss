@@ -1,0 +1,77 @@
+.form-square{
+    .input-border{
+        border:none;
+
+    }
+    .form-control:focus{
+        border-color: transparent;
+        box-shadow: none;
+    }
+    .custom-checkbox .custom-control-label{
+        &:before{
+            border-radius: 0 !important;
+        }
+    }
+    .custom-control-input:focus ~ .custom-control-label::before{
+        // border-color: transparent;
+        box-shadow: none;
+    }
+    .credit{
+        cursor: pointer;
+    }
+    .credit.active{
+        color:$primary !important;
+        border-color: transparent;
+        box-shadow: none;
+    }
+    .form-group{
+        position: relative;
+    }
+    .i-pas::before{
+        content:"\f023";
+    }
+    .i-email::before{
+        content: "\f0e0";
+    }
+    .i-username::before{
+        content:"\f007";
+    }
+    .i-birth::before{
+        content: "\f1fd";
+    }
+    .i-address::before{
+        content: "\f3c5";
+    }
+    .i-credit::before{
+        content: "\f09d";
+    }
+    .i-goodthru::before{
+        content: "\f272";
+    }
+
+    .i-email::before,.i-pas::before,.i-username::before,.i-birth::before,.i-address::before,.i-credit::before,.i-goodthru::before{
+        font-family: "FontAwesome";
+        position: absolute;
+        font-size: 24px;
+        color: theme-color('sec-primary');
+        top:44px;
+        left: 22px;
+    }
+    // .i-pas::before{
+    //     font-family: "FontAwesome";
+      
+    //     position: absolute;
+    //     font-size: 24px;
+    //     color: theme-color('sec-primary');
+    //     // top:135px;
+    //     left: 22px;
+    // }
+
+
+    #loginmail,#loginpas,#mail,#pas,#name,#username,#inputEmail4,#inputAddress{
+        text-indent: 40px;
+    }
+    #birth,#inputGoodThru{
+        text-indent: 20px;
+    }
+}

@@ -1,0 +1,125 @@
+.wrap{
+    position: relative;
+}
+
+
+
+
+.nav-positiion{
+ @include media-breakpoint-up(md){
+    position:absolute;
+    z-index: 111;
+     width:70%;
+     right: 15%;
+     left: 15%;
+   
+ }
+}
+.navbar-toggler{
+    border-color:transparent !important;
+} 
+
+.nav-text{
+    color:$secondary !important;
+    @include media-breakpoint-up(md){
+        color:#fff !important;
+        &:hover{
+            color:#c77d05 !important;
+        }
+    }
+}
+
+// .nav-text{
+//     color:$secondary ;
+//     @include media-breakpoint-up(md){
+//         color:#fff !important;
+//     }
+// }
+
+.header-border{
+    @include media-breakpoint-up(md){
+        border:2px solid $primary;
+        .padding-inside{
+            padding: 10px;
+        }
+    }
+    
+}
+.ban{
+    position: relative;
+    overflow: hidden;
+    .rectangle{
+        @include media-breakpoint-up(md){
+            position: absolute;
+            top:350px;
+            left:90px;
+            width:450px;
+            height:450px;
+            // background-color: $primary;
+            border: 20px solid #fffaeb;
+            // z-index:-1;
+        }
+        
+    }
+    .rectangle2{
+        @include media-breakpoint-up(md){
+            position: absolute;
+            top:250px;
+            left:430px;
+            width:230px;
+            height:230px;
+            // background-color: $primary;
+            border: 20px solid #fff4cc;
+            // z-index:;
+        }
+       
+    }
+    .rectangle-right{
+        @include media-breakpoint-up(md){
+            position: absolute;
+            bottom:-350px;
+            right:0px;
+            width:400px;
+            height:300px;
+            // background-color: $primary;
+            border-width: 20px 0 20px 20px;
+            border-style: solid;
+            border-color: #fffaeb;
+            // border: 20px 0px 20px 20px solid #fffaeb;
+            z-index:-1;
+            
+
+        }
+       
+    }
+}
+
+// .custom-carousel-caption{
+//     position: absolute;
+//     z-index:10;
+//     padding: 20px 0;
+//     color:#fff;
+//     text-align: center;
+//     left:10%;
+//     top:40px;
+//     width:30%;
+//     height:76%;
+//     @include media-breakpoint-down(md) { 
+//         height:50%;
+//         margin-top: 40px;
+//         margin-bottom: 40px;
+//         p{
+//             font-size:20px;
+//         }
+//     }
+// }
+.carousel-indicators li{
+    width: 13px;
+    height: 13px;  
+    border-radius:50%;
+  }
+
+.header-carousel-item{
+    height:400px;
+    
+}

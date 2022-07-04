@@ -1,0 +1,54 @@
+$text-secondary-dark:#37332f;
+
+.bg-cover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    // height:400px;
+}
+
+.bg-cover-finish{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.text-secondary-dark{
+color:$text-secondary-dark;
+ &:hover{
+     color:#6b4509;
+ }
+}
+
+.text-mode-rl{
+    @include media-breakpoint-up(md){
+        writing-mode: vertical-rl;
+    }
+   
+}
+.four-sides {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  } 
+
+.modal-content{
+    border-radius:0 !important;
+}
+.w-md-80{
+    width: 100%;
+    @include media-breakpoint-up(md){
+        width:80%;
+    }
+    
+}
+
+.w-md-81{
+    width: 100%;
+    @include media-breakpoint-up(md){
+        width:81%;
+    }
+    
+}

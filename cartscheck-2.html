@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="咚咚寵物專賣店" />
+    <meta property="og:description" content="使用 Bootstrap 結合 Sass 結束這回合吧" />
+    <meta property="og:site_name" content="咚咚打響機" />
+    <meta property="og:locale" content="zh_TW" />
+    <link rel="icon" href="img/logomeng.png">
+    <link rel="stylesheet" href="stylesheets/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6d2bdbbf0e.js"></script>
+    <title>結帳-2</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NV9MMJV');</script>
+</head>
+    <body>
+        <div class="wrap">
+            <header class="header">
+                <!-- 導覽列 -->
+                <div class="container ">
+                    <nav class="navbar navbar-expand-md navbar-light bg-white  my-md-5 ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <a class="navbar-brand" href="index.html">
+                        <img src="img/logomeng.png" width="60" height="60" alt="">
+                        <img src="img/logomeng.png" width="30" height="30" alt="">
+                        <img src="img/logomeng.png" width="30" height="30" alt="">
+                        </a>
+                        <a class="nav-link text-secondary order-md-1" href="carts.html"><i class="fas fa-shopping-cart"></i></a>
+                
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto text-center">
+                            <li class="nav-item  ">
+                            <a class="nav-link text-secondary" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link text-secondary " href="products.html">寵物專區</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link text-secondary" href="register.html">登入</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </nav>
+                </div>      
+            </header>
+            
+            <!-- 訂單明細 -->
+            <section class="my-4 chart">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-10">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <h4 class="text-secondary text-left">Transport</h4>
+                                </div>
+                                <div class="col-md-5  d-flex  align-items-center my-md-0 my-2">
+                                    <div class="process-steps w-100 d-flex justify-content-between">
+                                        <div class="step-circle compeleted"><i class="fas fa-check text-white"></i></div>
+                                        <div class="step-circle compeleted"><i class="fas fa-check text-white"></i></div>
+                                        <div class="step-circle active"></div>
+                                    </div>
+                                </div>
+                                    
+                            </div>
+
+                            <!-- 金額結算 -->
+                            <div class="row mt-4 chart-border">
+                                <div class="col-md-9 col-8 mt-2 align-self-end">
+                                    <strong class="text-sec-primary h6">Total</strong>
+                                </div>
+                                <div class="col-md-3 col-4 text-right mt-2 ">
+                                    <strong class="text-danger h4">NT$719</strong>
+                                </div> 
+                            </div>
+                        </div>
+
+                        <!-- 運送資訊 -->
+                        <div class="col-10 my-2">
+                            <div class="my-4 ">
+                                <form class="form-square">
+                                    
+                                    <div class="form-group border py-1 ">
+                                        <label for="cardnum1" class="d-block i-credit ml-1" >Card</label>
+                                        <input type="text" name="cardnum" id="cardnum1" class="form-control input-border d-inline-block ml-4" maxlength="4" placeholder="1111" onkeyup="value=value.replace(/[^0-9]/g,'')" style="width:61px">
+                                        <span>－</span>
+                                        <input type="text" name="cardnum" id="cardnum2" class="form-control input-border d-inline-block" maxlength="4" placeholder="1111" onkeyup="value=value.replace(/[^0-9]/g,'')" style="width:61px">
+                                        <span>－</span>
+                                        <input type="text" name="cardnum" id="cardnum3" class="form-control input-border d-inline-block " maxlength="4" placeholder="1111" onkeyup="value=value.replace(/[^0-9]/g,'')" style="width:61px">
+                                        <span>－</span>
+                                        <input type="text" name="cardnum" id="cardnum4" class="form-control input-border d-inline-block" maxlength="4" placeholder="1111" onkeyup="value=value.replace(/[^0-9]/g,'')" style="width:61px">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn credit  active text-muted px-1" >
+                                                <input type="radio"  name="options" id="visa" autocomplete="off" checked> <i class="fab fa-cc-visa fa-2x align-middle " required></i>
+                                            </label>
+                                            <label class="btn credit text-muted px-1">
+                                                <input type="radio" name="options" id="JCB" autocomplete="off"><i class="fab fa-cc-jcb align-middle fa-2x"></i>
+                                            </label>
+                                            <label class="btn text-muted credit px-1">
+                                                <input type="radio" name="options" id="option3" autocomplete="off"><i class="fab fa-cc-mastercard align-middle fa-2x" ></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    
+                            
+                                    <div class="form-group py-1  border ">
+                                            <label for="inputGoodThru" class="i-goodthru ml-1">GOOD THRU</label>
+                                            <input type="month" name="GoodThru" id="inputGoodThru" class="form-control input-border ">
+                                    </div> 
+                                    <div class="form-group  py-1 border " style="width: 200px;">
+                                            <label for="inputBackNum" class="ml-1">BackNum</label>
+                                            <input type="text" name="BackNum" id="inputBackNum" class="form-control input-border " maxlength="3" onkeyup="value=value.replace(/[^0-9]/g,'')" placeholder="345">
+                                    </div>
+                                    
+                                </form>
+                                
+                            </div>
+                        </div>  
+                        <button type="button" class="btn btn-primary w-md-81 rounded-0 text-secondary-dark py-2 mt-1 font-weight-bold " onclick="goNext()">下一步</button> 
+                    </div>
+                </div>
+            </section>
+
+            <!-- 腳尾 -->
+            <footer class=" table-primary footer">
+                <div class="container py-3">
+                    <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <img src="img/logomeng.png" alt="" width="100px" height="100px">
+                        <p class="text-secondary-dark h5">咚咚寵物專賣店</p>
+                        <p>800 高雄市新興區幸福路 520 號</p>
+                        <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn footer-btn d-block py-2 mb-1 rounded-0" href="mengmengpet@email.com">mengmengpet@email.com</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="tel:07-1234-5678" class="btn footer-btn d-block py-2 rounded-0">TEL:07-1234-5678</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="bg-primary py-2 text-secondary-dark text-center">
+                    © 2019 mengmengpet All Rights Reserved
+                    <a href="#" class="footer-tag"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-tag"><i class="fab fa-facebook-square"></i></a>
+            
+                </div>
+            </footer>
+        </div>    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+             crossorigin="anonymous"></script>
+        <script src="all.js"></script>
+    </body>
+</html>

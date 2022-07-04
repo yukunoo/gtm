@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="咚咚寵物專賣店" />
+    <meta property="og:description" content="使用 Bootstrap 結合 Sass 結束這回合吧" />
+    <meta property="og:site_name" content="咚咚打響機" />
+    <meta property="og:locale" content="zh_TW" />
+    <link rel="icon" href="img/logomeng.png">
+    <link rel="stylesheet" href="stylesheets/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6d2bdbbf0e.js"></script>
+    <title>商品列表</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NV9MMJV');</script>
+</head>
+    <body>
+        <div class="wrap">
+            <header class="header">
+                <!-- 導覽列 -->
+                <div class="container ">
+                    <nav class="navbar navbar-expand-md navbar-light bg-transparent header-border my-md-5 py-md-2 nav-positiion ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <a class="navbar-brand" href="index.html">
+                        <img src="img/logomeng.png" width="60" height="60" alt="">
+                        <img src="img/logomeng.png" width="30" height="30" alt="">
+                        <img src="img/logomeng.png" width="30" height="30" alt="">
+                        </a>
+                        <a class="nav-link nav-text order-md-1" href="carts.html"><i class="fas fa-shopping-cart"></i></a>
+                
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto text-center">
+                            <li class="nav-item  ">
+                            <a class="nav-link nav-text" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                            <a class="nav-link nav-text " href="products.html">寵物專區</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link nav-text" href="register.html">登入</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- banner -->
+                <div class="bg-cover "style="background-image: url('img/banner2.jpg') ; height:450px">
+                
+            </header>
+            <!-- 三格毛玻璃 -->
+            <section class="glass-list py-5">
+                <span class="rectangle-left d-block"></span>
+                <span class="rectangle-right d-block"></span>
+                <div class="container px-0">
+                    <div class="row no-gutters justify-content-center ">
+                        <div class="col-md-10">
+                            <div class="row no-gutters " >
+                                <a data-toggle="tab" href="#pet-life" class="col-4 rectangle-image-wrap rectangle-item active"  >
+                                    <span class="rectangel-text ">寵物生活</span>
+                                    <div class="four-sides rectangle-over"></div>
+                                    <div class="bg-cover rectangle-image" style="background-image: url('img/product-pet-tool2.jpg');"></div>
+                                </a>
+                                <a  class="col-4 rectangle-image-wrap rectangle-item" data-toggle="tab" href="#pet-food">
+                                    <span class="rectangel-text">營養百分</span>
+                                    <div class="four-sides rectangle-over"></div>
+                                    <div class="bg-cover rectangle-image" style="background-image: url('img/product-dog-food2.jpg');"></div>
+                                </a>
+                                <a data-toggle="tab" href="#pet-toy" class="col-4 rectangle-image-wrap rectangle-item ">
+                                    <span class="rectangel-text">寵物玩具</span>
+                                    <div class="four-sides rectangle-over"></div>
+                                    <div class="bg-cover rectangle-image" style="background-image: url('img/product-pet-toy.jpg');"></div>
+                                
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </section>
+            <!-- 商品列表 -->
+            <section class="item-card mb-4">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col">
+                            <div class="tab-content" id="nav-tabContent">
+                                <!-- 寵物生活 -->
+                                <div class="tab-pane fade show active" id="pet-life" role="tabpanel" aria-labelledby="list-home-list">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-md-10 mb-4 ">
+                                            <div class="card rounded-0 h-100">
+                                                    <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-chshoin.jpg)"></div>
+                                                <div class="bg-sec-primary text-white item-tag text-center">
+                                    
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                    
+                                                    <p class="item-tag-text">本日精選</p>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-tittle text-sec-primary  ">溫軟舒適坐墊</h5>
+                                                    <p class="card-text text-muted">髒污時請用市售衣物洗劑手洗晾乾即可，請避免洗衣機洗滌。 適合：貓、吉娃娃、約克夏、瑪爾濟斯等小型犬                                                   </p>
+                                                    
+                                                </div>
+                                                <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$499</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-md-10 mb-4  ">
+                                            <div class="card rounded-0 h-100">
+                                                    <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-chshoin2.jpg)"></div>
+                                                <div class=" text-white item-tag text-center">
+                                    
+                                                        <label class="ui-checked-display">
+                                                        <input type="checkbox" class="ui-checkbox">
+                                                        <i class="far fa-heart item-icon ui-hidden"></i>
+                                                        <i class="fas fa-heart item-icon  ui-show"></i>
+                                                        </label>
+                                                    </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-tittle text-sec-primary  ">可愛狗狗舒適坐墊</h5>
+                                                    <p class="card-text text-muted">髒污時請用市售衣物洗劑手洗晾乾即可，請避免洗衣機洗滌。</p>
+                                                </div>
+                                                <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$450</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-4 mb-md-10 mb-4 ">
+                                            <div class="card rounded-0 h-100">
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-tool.jpg)"></div>
+
+                                                <div class=" text-white item-tag text-center">
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-tittle text-sec-primary  ">寵物不會亂動指甲剪</h5>
+                                                    <p class="card-text text-muted">
+                                                            人性化握手，使用非常舒適，無毒環保材質，
+                                                            刀刃使用不鏽鋼材質，手柄使用防滑橡膠材質</p>
+                                                </div>
+                                                <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$250</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-4 mb-md-10 mb-4 ">
+                                            <div class="card rounded-0 h-100">
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-tool2.jpg)"></div>
+                                                <div class=" text-white item-tag text-center">
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-tittle text-sec-primary  ">小型寵物牽繩</h5>
+                                                    <p class="card-text text-muted">挑選高強度的尼龍織帶，大幅提升牽繩的耐用程度</p>
+                                                </div>
+                                                <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$350</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-4 mb-md-10 mb-4 ">
+                                            <div class="card rounded-0 h-100">
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-tool3.jpg)"></div>
+                                                <div class="bg-sec-primary text-white item-tag text-center">
+                                    
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                    
+                                                    <p class="item-tag-text">本日精選</p>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-tittle text-sec-primary  ">耐久舒服項圈</h5>
+                                                    <p class="card-text text-muted">素色基本款，簡約大方。</p>
+                                                </div>
+                                                <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$399</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-4 mb-md-10 mb-4 ">
+                                            <div class="card rounded-0 h-100" >
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-tool4.jpg)"></div>
+                                                <div class=" text-white item-tag text-center">
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-tittle text-sec-primary  ">不痠痛寵物背包</h5>
+                                                    <p class="card-text text-muted">方便隨身攜帶，肩膀不易痠痛，有良好透氣，舒適軟墊讓寵物安心外出</p>
+                                                </div>
+                                                <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$879</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                                </div>
+                                        </div>
+                                        <div class="col-md-4 mb-md-10 mb-4 ">
+                                            <div class="card rounded-0 h-100">
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-tool5.jpg)"></div>
+                                                <div class=" text-white item-tag text-center">
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-tittle text-sec-primary  ">客製化木製吊牌</h5>
+                                                    <p class="card-text text-muted">可隨心刻上自己想要的文字和圖案</p>
+                                                </div>
+                                                <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$200</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination ustify-content-center">
+                                                <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    
+                                </div>
+                                <!-- 營養百分 -->
+                                <div class="tab-pane fade" id="pet-food" role="tabpanel" aria-labelledby="list-profile-list">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-md-10 mb-4 ">
+                                            <div class="card rounded-0 h-100">
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-dog-food.jpg)"></div>
+                                                <div class="bg-sec-primary text-white item-tag text-center">
+                                    
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                    
+                                                    <p class="item-tag-text">本日精選</p>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-tittle text-sec-primary  ">狗狗零食</h5>
+                                                    <p class="card-text text-muted">提供精確均衡營養，以滿足其特殊需求，提升活力與精力的營養</p>
+                                                </div>
+                                                <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$169</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-md-10 mb-4  ">
+                                            <div class="card rounded-0 h-100">
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-dog-food2.jpg)"></div>
+
+                                            <div class=" text-white item-tag text-center">
+                                
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-tittle text-sec-primary  ">潔牙骨</h5>
+                                                <p class="card-text text-muted">獨創添加六偏磷酸鈉，預防牙菌斑生成、預防蛀牙、清除牙垢，維持愛犬口腔健康</p>
+                                            </div>
+                                            <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$328</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-md-10 mb-4 ">
+                                            <div class="card rounded-0 h-100">
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-dog-food3.jpg)"></div>
+                                                <div class=" text-white item-tag text-center">
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-tittle text-sec-primary  ">犬飼料</h5>
+                                                    <p class="card-text text-muted">採用新鮮的雞肉做為主要成份，及結合均衡營養和高適口性的配方。運用最新的食品科學，提供迷你型犬最佳營養，以保持活力、健康體態完美。</p>
+                                                </div>
+                                                <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$388</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination ustify-content-center">
+                                                <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                            
+                                </div>
+                                <!-- 寵物玩具 -->
+                                <div class="tab-pane fade" id="pet-toy" role="tabpanel" aria-labelledby="list-messages-list">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-md-10 mb-4 ">
+                                            <div class="card rounded-0 h-100">
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-toy.jpg)"></div>
+                                            <div class=" text-white item-tag text-center">
+                                
+                                                <label class="ui-checked-display">
+                                                <input type="checkbox" class="ui-checkbox">
+                                                <i class="far fa-heart item-icon ui-hidden"></i>
+                                                <i class="fas fa-heart item-icon  ui-show"></i>
+                                                </label>
+                                            </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-tittle text-sec-primary  ">紓壓小玩具</h5>
+                                                <p class="card-text text-muted">紓壓耐咬，可陪伴許久的玩伴</p>
+                                            </div>
+                                            <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$399</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-md-10 mb-4  ">
+                                            <div class="card rounded-0 h-100">
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-tool6.jpg)"></div>
+                                            <div class=" text-white item-tag text-center">
+                                
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                                </div>
+                                            <div class="card-body text-center">
+                                                <h5 class="card-tittle text-sec-primary  ">寵物可愛衣服</h5>
+                                                <p class="card-text text-muted">夏日炎炎涼爽襯衫，帥氣爆表、人見人愛</p>
+                                            </div>
+                                            <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$359</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-md-10 mb-4 ">
+                                            <div class="card rounded-0 h-100">
+                                                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-cat-play4.jpg)"></div>
+                                                <div class=" text-white item-tag text-center">
+                                                    <label class="ui-checked-display">
+                                                    <input type="checkbox" class="ui-checkbox">
+                                                    <i class="far fa-heart item-icon ui-hidden"></i>
+                                                    <i class="fas fa-heart item-icon  ui-show"></i>
+                                                    </label>
+                                                </div>
+                                                <div class="card-body text-center">
+                                                    <h5 class="card-tittle text-sec-primary  ">貓咪圓形抓板</h5>
+                                                    <p class="card-text text-muted">立柱為麻繩捆繩，邊緣高精細度光滑打磨處理。</p>
+                                                </div>
+                                                <div class="card-footer border-0 text-center p-0 bg-white">
+                                                        <strong class="text-danger h5 -2">$569</strong>
+                                                        <a href="#" class=" mt-2 btn btn-primary text-secondary-dark btn-block rounded-0 "><i class="fas fa-shopping-cart mr-1"></i>加入購物車</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination ustify-content-center">
+                                                <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                     </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class=" table-primary footer">
+                <div class="container py-3">
+                    <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <img src="img/logomeng.png" alt="" width="100px" height="100px">
+                        <p class="text-secondary-dark h5">咚咚寵物專賣店</p>
+                        <p>800 高雄市新興區幸福路 520 號</p>
+                        <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn footer-btn d-block py-2 mb-1 rounded-0" href="mengmengpet@email.com">mengmengpet@email.com</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="tel:07-1234-5678" class="btn footer-btn d-block py-2 rounded-0">TEL:07-1234-5678</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="bg-primary py-2 text-secondary-dark text-center">
+                    © 2019 mengmengpet All Rights Reserved
+                    <a href="#" class="footer-tag"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-tag"><i class="fab fa-facebook-square"></i></a>
+            
+                </div>
+            </footer>
+        </div>    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+             crossorigin="anonymous"></script>
+        <script src="all.js"></script>
+    </body>
+</html>

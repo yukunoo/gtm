@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="咚咚寵物專賣店" />
+    <meta property="og:description" content="使用 Bootstrap 結合 Sass 結束這回合吧" />
+    <meta property="og:site_name" content="咚咚打響機" />
+    <meta property="og:locale" content="zh_TW" />
+    <link rel="icon" href="img/logomeng.png">
+    <link rel="stylesheet" href="stylesheets/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6d2bdbbf0e.js"></script>
+    <title>首頁</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-NV9MMJV');</script>
+</head>
+
+<body>
+  <div class="wrap">
+    
+    <header>
+      <!-- 導覽列 -->
+      <div class="container ">
+          <nav class="navbar navbar-expand-md navbar-light bg-transparent header-border my-md-5 py-md-2 nav-positiion ">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logomeng.png" width="60" height="60" alt="">
+              <img src="img/logomeng.png" width="30" height="30" alt="">
+              <img src="img/logomeng.png" width="30" height="30" alt="">
+            </a>
+            <a class="nav-link nav-text order-md-1 " href="carts.html"><i class="fas fa-shopping-cart"></i></a>
+    
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto text-center">
+                <li class="nav-item">
+                  <a class="nav-link  nav-text" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-text" href="./products.html">寵物專區</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-text" href="register.html">登入</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+      </div>
+        <!-- banner -->
+      <banner class="ban">
+          <div class="container-fluid ">
+            <div class="row ">
+              <div class="col-md-4 px-0">
+                <span class="rectangle d-block"></span>
+                <span class="rectangle2 d-block"></span>
+                
+              </div>
+      
+              <div class="col-md-8 px-0 " >
+                <span class="rectangle-right d-block"></span>
+                <div id="pet-carousel" class="carousel slide " data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#pet-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#pet-carousel" data-slide-to="1"></li>
+                    <li data-target="#pet-carousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner ">
+                    <div class="carousel-item active bg-cover header-carousel-item"
+                      style="background-image: url('img/banner.jpg')">
+                    </div>
+                    <div class="carousel-item bg-cover header-carousel-item"
+                      style="background-image: url('img/banner2.jpg')">
+                      <!-- <img src="" class="d-block w-100" alt="..."> -->
+                    </div>
+                    <div class="carousel-item bg-cover header-carousel-item"
+                      style="background-image: url('img/banner3.jpg')">
+                      <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+      </banner>
+    </header>
+
+    <!-- 左圖片右文字 -->
+    <section class="section-one my-15 mb-md-0 ">
+      <div class="container ">
+        <div class="row">
+          <div class="col  d-block d-md-none">
+            <div class=" text-secondary  mt-n10 text-center">
+              <h3 class=" font-weight-bold mr-5">寵物至上</h3>
+              <h3 class=" font-weight-bold ml-5">飼養不棄養</h3>
+            </div>
+          </div>
+          <div class=" break-outside-block col-md-5 ">
+            <div class="bg-cover background-size  h-100 "
+              style="background-image: url('img/section-block2.jpg')">
+            </div>
+          </div>
+
+          <div class=" d-flex  col-md-7 flex-row-reverse py-md-3 vertical-content">
+            <div class="text-mode-rl text-secondary pt-md-5 d-none d-md-block " style="width:100px; ">
+              <h3 class="mb-md-5 font-weight-bold ml-0">寵物至上</h3>
+              <h3 class="mt-md-5 font-weight-bold mr-1">領養代替購買</h3>
+            </div>
+            <div class="text-mode-rl text-secondary-dark mr-lg-2 py-1 ">
+              <p>不再流浪，能夠擁有一個安心、安穩的家</p>
+              <p>現今社會因為很多不肖業者為了獲利而刻意繁殖更多動物來販賣，對動物本身造成了很多健康上的問題，而領養的好處其實很多，可以免除動物的撲殺及虐待，也能讓牠們擁有安心安穩的家，不再到處流浪，而插畫主要運用生動及可愛的狗狗作為設計發想，牠們的天真無邪及忠心的陪伴，能讓生活增添更多趣事，領養前也請考慮周全，領養代替購買，終養不棄養。
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 上圖片下文字 -->
+    <section class="section-tow py-md-15 " >
+      <span class="rectangle-center d-block"></span>
+      <span class="rectangle-left2 d-block"></span>
+      <!-- <span class="rectangle-right d-block"></span> -->
+      <span class="rectangle-right2 d-block"></span>
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-6 break-inside-block col-12" style="z-index: 2">
+            <div class="img-boeder img-inside-p">
+              <div class="bg-cover img-size" style="background-image: url('img/section-block.jpg')"></div>
+            </div>
+          </div>
+          <div class="col-md-7 ml-md-auto col-12 ">
+            <div class="bg-section p-2  ">
+              <div class="text-center text-secondary">
+                <h3 class=" mr-6 font-weight-bold ">寵物至上</h3>
+                <h3 class=" ml-7 font-weight-bold  mb-1">終養不棄養</h3>
+              </div>
+              <div class="text-secondary-dark vertical-content ">
+                <p>勵志給寵物最好的、最舒適的產品，最棒的生活品質</p>
+                <p>每個寵物都是自己家人，咚咚寵物專賣店為了大家最愛的寵物，準備了各式各樣商品，嚴格把關，食用安心、使用放心，讓您的寵物快樂成長
+                  每一天，歡樂每一天。
+                </p>
+                <P>Each pet is a family member, and the pet store specializes in all kinds of products for everyone's favorite pets. It is strictly controlled, safe to eat, safe to use, and let your pet grow up happily.
+                    Every day, every day of joy</P>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- 列表 -->
+    <section class="item-card">
+      <span class="rectangle-left d-block"></span>
+      <span class="rectangle-left2 d-block"></span>
+      <span class="rectangle-right d-block"></span>
+      <span class="rectangle-right2 d-block"></span>
+      <h2 class=" text-center text-secondary p-5">本日精選</h2>
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-4 mb-md-10 mb-4 ">
+            <div class="card rounded-0 h-100">
+              <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-chshoin.jpg)"></div>
+              <!-- <img src="img/product-pet-chshoin.jpg" class="card-img-top rounded-0" alt="..." height="300px"> -->
+              <div class="bg-sec-primary text-white item-tag text-center">
+
+                <label class="ui-checked-display">
+                  <input type="checkbox" class="ui-checkbox">
+                  <i class="far fa-heart item-icon ui-hidden"></i>
+                  <i class="fas fa-heart item-icon  ui-show"></i>
+                </label>
+
+                <p class="item-tag-text">本日精選</p>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-tittle text-sec-primary  ">溫軟舒適坐墊</h5>
+                <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk
+                  of the card's content.</p>
+              </div>
+              <a href="products.html#pet-life" class="btn btn-primary text-sec-primary btn-block rounded-0 ">了解更多</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-md-10 mb-4">
+            <div class="card rounded-0 h-100">
+                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-pet-tool3.jpg)"></div>
+              <!-- <img src="img/product-pet-tool3.jpg" class="card-img-top rounded-0" alt="..." height="300px"> -->
+              <div class="bg-sec-primary text-white item-tag text-center">
+                <label class="ui-checked-display">
+                  <input type="checkbox" class="ui-checkbox">
+                  <i class="far fa-heart item-icon ui-hidden"></i>
+                  <i class="fas fa-heart item-icon  ui-show"></i>
+                </label>
+
+                <p class="item-tag-text">本日精選</p>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-tittle text-sec-primary  ">耐久舒服項圈</h5>
+                <p class="card-text text-muted">Some quick example text to build on the card title and make up the bulk
+                  of the card's content.</p>
+              </div>
+              <a href="products.html#pet-life" class="btn btn-primary text-sec-primary btn-block rounded-0 ">了解更多</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-md-10 mb-4 ">
+            <div class="card rounded-0 h-100">
+                <div class="card-img-top rounded-0 item-h bg-cover" style="background-image: url(img/product-dog-food.jpg)"></div>
+              <!-- <img src="img/product-dog-food.jpg" class="card-img-top rounded-0" alt="..." height="300px"> -->
+              <div class="bg-sec-primary text-white item-tag text-center">
+                <label class="ui-checked-display">
+                  <input type="checkbox" class="ui-checkbox">
+                  <i class="far fa-heart item-icon ui-hidden"></i>
+                  <i class="fas fa-heart item-icon  ui-show"></i>
+                </label>
+
+                <p class="item-tag-text">本日精選</p>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-tittle text-sec-primary  ">營養百分寵物點心</h5>
+                <p class="card-text text-muted">提供精確均衡營養，以滿足其特殊需求，提升活力與精力的營養</p>
+              </div>
+              <a href="products.html#pet-food" class="btn btn-primary text-sec-primary btn-block rounded-0 ">了解更多</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 腳尾 -->
+    <footer class=" table-primary footer">
+      <div class="container py-3">
+        <div class="row justify-content-center">
+          <div class="col-md-6 text-center">
+            <img src="img/logomeng.png" alt="" width="100px" height="100px">
+            <p class="text-secondary-dark h5">咚咚寵物專賣店</p>
+            <p>800 高雄市新興區幸福路 520 號</p>
+            <div class="row">
+              <div class="col-md-6">
+                <a class="btn footer-btn d-block py-2 mb-1 rounded-0" href="mengmengpet@email.com">mengmengpet@email.com</a>
+              </div>
+              <div class="col-md-6">
+                <a href="tel:07-1234-5678" class="btn footer-btn d-block py-2 rounded-0">TEL:07-1234-5678</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary py-2 text-secondary-dark text-center">
+        © 2019 mengmengpet All Rights Reserved
+        <a href="#" class="footer-tag"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="footer-tag"><i class="fab fa-facebook-square"></i></a>
+
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

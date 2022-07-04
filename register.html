@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="咚咚寵物專賣店" />
+    <meta property="og:description" content="使用 Bootstrap 結合 Sass 結束這回合吧" />
+    <meta property="og:site_name" content="咚咚打響機" />
+    <meta property="og:locale" content="zh_TW" />
+    <link rel="icon" href="img/logomeng.png">
+    <link rel="stylesheet" href="stylesheets/css/all.min.css">
+    <script src="https://kit.fontawesome.com/6d2bdbbf0e.js"></script>
+    <title>登入</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NV9MMJV');</script>
+</head>
+    <body>
+        <div class="wrap">
+            <header class="header">
+                <!-- 導覽列 -->
+                <div class="container ">
+                    <nav class="navbar navbar-expand-md navbar-light bg-transparent header-border my-md-5 py-md-2 nav-positiion ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                
+                        <a class="navbar-brand" href="index.html">
+                        <img src="img/logomeng.png" width="60" height="60" alt="">
+                        <img src="img/logomeng.png" width="30" height="30" alt="">
+                        <img src="img/logomeng.png" width="30" height="30" alt="">
+                        </a>
+                        <a class="nav-link nav-text order-md-1" href="carts.html"><i class="fas fa-shopping-cart"></i></a>
+                
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto text-center">
+                            <li class="nav-item  ">
+                            <a class="nav-link nav-text" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link nav-text " href="products.html">寵物專區</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link nav-text" href="register.html">登入</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </nav>
+                </div>
+                <!-- banner -->
+                <div class="bg-cover "style="background-image: url('img/banner4.jpg') ; height:450px">
+                
+            </header>
+
+            <!-- 登入 -->
+            <section class="my-10 res">
+                <div class="container">
+                    <h2 class="display-4  font-weight-bold text-secondary text-center mb-2">CREATE AN ACCOUNT</h2>
+                    <div class="row justify-content-center no-gutters">
+                        <div class="col-lg-10 col-12 border box-shandow res-circle">
+                            <div class="row no-gutters ">
+                                <div class="col-md-6 order-md-1 bg-light d-flex align-items-center justify-content-center">
+                                    <div class=" row  no-gutters justify-content-center ">
+                                        <div class="col-12 order-md-3">
+                                            <p class="text-center  my-2 mt-md-n1">Are you a member? <a href="#" data-toggle="modal" data-target="#loginModalCenter">Login now</a href="#"></p>
+                                        </div>
+                                        <div class="col-md-11 col-4 mb-4 ">
+                                            <a href="http://facebook.com" class="d-flex justify-content-between text-white text-center text-decoration-none bg-fb ">
+                                                <span class="fab fa-facebook-f fa-2x d-lg-block d-md-none d-block res-icon py-2" ></span>
+                                                <span class="w-100   res-font-size py-2 d-md-block d-none" >Connect With Facebook</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11 col-4 mb-4">
+                                            <a href="http://twitter.com" class="d-flex justify-content-between text-white text-center text-decoration-none bg-info ">
+                                                <span class="fab fa-twitter fa-2x d-lg-block d-md-none d-block res-icon py-2"></span>
+                                                <span class="w-100   res-font-size py-2 d-md-block d-none" >Connect With Twitter</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-11 col-4 mb-4">
+                                            <a href="http://google.com" class="d-flex justify-content-between text-white text-center text-decoration-none bg-danger  " >
+                                                <span class="fab fa-google-plus-g fa-2x d-lg-block d-md-none d-block res-icon py-2" ></span>
+                                                <span class="w-100   res-font-size py-2 d-md-block d-none" >Connect With Google+</span>
+                                            </a>
+                                        </div>
+                                     
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <form action="" class="form-square  m-2">
+                                        <div class="form-group py-1 border my-0">
+                                                <label for="mail" class="i-email ml-1">Email</label>
+                                                <input type="mail" class="form-control input-border" id="mail" aria-describedby="textHelp" placeholder="Enter name">
+                                        </div>
+                                        <div class="form-group py-1 border my-0">
+                                                <label for="pas" class="i-pas ml-1">Password</label>
+                                                <input type="password" class="form-control input-border" id="pas" aria-describedby="emailHelp" placeholder="Enter email">
+                                        </div>
+                                        <div class="form-group py-1 border my-0">
+                                                <label for="name" class="i-username ml-1">Username</label>
+                                                <input type="text" class="form-control input-border" id="name" aria-describedby="passwordHelp" placeholder="Enter password">
+                                        </div>
+                                        <div class="form-group py-1 border my-0">
+                                                <label for="birth"  class="i-birth ml-1">Birthday</label>
+                                                <input type="date" class="form-control input-border" id="birth" aria-describedby="dayHelp" >
+                                        </div>
+                                        <div class="custom-control custom-checkbox my-1 text-center">
+                                            <input type="checkbox" class="custom-control-input res-rounded" id="customCheck1">
+                                            <label class="custom-control-label" for="customCheck1">Remember me</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary w-100 rounded-0 text-secondary-dark py-1 my-1 font-weight-bold">創建帳號</button>
+                                    </form>
+                                </div>
+                            </div>
+                              
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 腳尾 -->
+            <footer class=" table-primary footer">
+                <div class="container py-3">
+                    <div class="row justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <img src="img/logomeng.png" alt="" width="100px" height="100px">
+                        <p class="text-secondary-dark h5">咚咚寵物專賣店</p>
+                        <p>800 高雄市新興區幸福路 520 號</p>
+                        <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn footer-btn d-block py-2 mb-1 rounded-0" href="mengmengpet@email.com">mengmengpet@email.com</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="tel:07-1234-5678" class="btn footer-btn d-block py-2 rounded-0">TEL:07-1234-5678</a>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="bg-primary py-2 text-secondary-dark text-center">
+                    © 2019 mengmengpet All Rights Reserved
+                    <a href="#" class="footer-tag"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-tag"><i class="fab fa-facebook-square"></i></a>
+            
+                </div>
+            </footer>
+
+              
+              <!-- Modal -->
+              <div class="modal fade " id="loginModalCenter" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true" data-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered " role="document">
+                  <div class="modal-content">
+                    <div class="modal-header ">
+                      <h4 class="modal-title text-secondary font-weight-bold " id="loginModalCenterTitle">LOGIN IN</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="text-center text-sec-primary">－ Social Login －</h4>
+                        <div class=" row px-md-3 no-gutters justify-content-center ">
+                            <div class="col-4 ">
+                                <a href="http://facebook.com" class=" btn text-white text-center d-block btn-fb rounded-0 py-2">
+                                    <span class="fab fa-facebook-f fa-2x " ></span>
+                                    <!-- <span class="w-100   res-font-size py-2 d-md-block d-none" >Connect With Facebook</span> -->
+                                </a>
+                            </div>
+                            <div class="col-4 ">
+                                <a href="http://twitter.com" class="btn text-white text-center d-block btn-info rounded-0 py-2">
+                                    <span class="fab fa-twitter fa-2x "></span>
+                                    <!-- <span class="w-100   res-font-size py-2 d-md-block d-none" >Connect With Twitter</span> -->
+                                </a>
+                            </div>
+                            <div class="col-4 ">
+                                <a href="http://google.com" class="btn text-white text-center d-block btn-danger rounded-0  py-2" >
+                                    <span class="fab fa-google-plus-g fa-2x" ></span>
+                                    <!-- <span class="w-100   res-font-size py-2 d-md-block d-none" >Connect With Google+</span> -->
+                                </a>
+                            </div>  
+                        </div>
+                        <form action="" class="form-square  my-2">
+                            <div class="form-group py-1 border my-0">
+                                    <label for="loginmail" class="i-email ml-1">Email</label>
+                                    <input type="email" class="form-control input-border" id="loginmail" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group py-1 border my-0">
+                                    <label for="loginpas" class="i-pas ml-1">Password</label>
+                                    <input type="password" class="form-control input-border" id="loginpas" aria-describedby="passwordHelp" placeholder="Enter password">
+                            </div>
+                            <div class="custom-control custom-checkbox my-1 text-center">
+                                <input type="checkbox" class="custom-control-input res-rounded" id="logincheck">
+                                <label class="custom-control-label" for="logincheck">Remember me</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 rounded-0 text-secondary-dark py-1 my-1 font-weight-bold">登入帳號</button>
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-third text-sec-primary" data-dismiss="modal">CLOSE</button>
+                      <button type="button" class="btn btn-primary text-sec-primary">LOGIN</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+        </div>    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+             crossorigin="anonymous"></script>
+        <script src="all.js"></script>
+    </body>
+</html>

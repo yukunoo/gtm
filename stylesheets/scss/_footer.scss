@@ -1,0 +1,13 @@
+.footer{
+    .footer-btn{
+        background-color:rgba(white,.5);
+        transition: .3s ;
+        &:hover{
+            background-color:rgba(white,1);
+            color: $text-secondary-dark;
+        }
+    }
+    .footer-tag{
+        padding: 5px;
+    }
+}

@@ -1,0 +1,32 @@
+.chart{
+    .chart-img{
+        min-height: 80px;
+        min-width: 90px;
+        background-position: center center;
+        background-size:cover;
+    }
+    
+    .chart-nember:focus{
+        box-shadow: none;
+        border-color: #ced4da;
+        background-color: theme-color('primary');
+    }
+    .chart-number-minus,.chart-number-plus{
+           
+            border:none;
+            font-size: 20px;
+            padding: 0 15px;
+            &:focus{
+                border-color: transparent;
+                box-shadow: none;
+                color:theme-color('primary');
+            }
+    }
+}
+
+.chart-border{
+    border-width: 0px 0px 1px 0px;
+    padding: 35px 0 ;
+    border-color: #e1e7ec;
+    border-style: solid;
+}

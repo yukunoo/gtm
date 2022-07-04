@@ -1,0 +1,15 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../helpers/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+@import"./header";
+@import"./section";
+@import"./utilities";
+@import"./item-card";
+@import"./glass-list";
+@import"./form-square";
+@import"./res";
+@import"./chart";
+@import"./process-steps";
+@import"./footer";
